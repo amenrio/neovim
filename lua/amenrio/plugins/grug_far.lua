@@ -8,6 +8,6 @@ return {
       "<leader>S",
       "<cmd>GrugFar<cr>",
       desc = "Global search & replace",
-    }
-  }
+    },
+  },
 }
