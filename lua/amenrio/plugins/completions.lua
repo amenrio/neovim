@@ -15,10 +15,11 @@ return {
     },
     config = function()
       require("luasnip.loaders.from_vscode").lazy_load()
-    end
+    end,
   },
   {
     "hrsh7th/nvim-cmp",
+    dependencies = { "SergioRibera/cmp-dotenv" },
     config = function()
       local cmp = require("cmp")
       local cmp_autopairs = require("nvim-autopairs.completion.cmp")
@@ -42,10 +43,11 @@ return {
           { name = "nvim_lsp" },
           { name = "nvim_lua" },
           { name = "luasnip" },
+          { name = "dotenv" },
           { name = "buffer" },
-        }
+        },
       })
       cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
-    end
-  }
+    end,
+  },
 }
