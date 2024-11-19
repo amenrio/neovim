@@ -8,5 +8,13 @@ return {
       })
     end,
   },
-  { 'echasnovski/mini.starter', version = false ,opts = {}},
+  {
+    'echasnovski/mini.starter',
+    version = false,
+    opts = {
+      header = nil,
+      footer = "",
+    }
+  },
+  { 'echasnovsky/mini.icons', version = false, opts = {} },
 }
