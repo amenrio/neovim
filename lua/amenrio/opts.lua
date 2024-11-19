@@ -59,3 +59,5 @@ vim.opt.scrolloff = 10
 
 
 vim.opt.termguicolors = true
+
+vim.g.python3_host_prog = "$XDG_CONFIG_HOME/nvim/venv/bin/python"
