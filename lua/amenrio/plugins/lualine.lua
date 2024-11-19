@@ -5,7 +5,7 @@ return{
     local lazy_status = require('lazy.status')
     require('lualine').setup({
       options = {
-        theme = 'auto',
+        theme = 'everforest',
         component_separators = {left = '|', right = '|'},
         section_separators = {left = '', right = ''},
       },
