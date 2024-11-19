@@ -32,4 +32,10 @@ return{
       background = "hard",
     }
   },
+  {
+    'rebelot/kanagawa.nvim',
+    name = 'kanagawa',
+    opts = {
+      theme = 'dragon'
+    }
   }
