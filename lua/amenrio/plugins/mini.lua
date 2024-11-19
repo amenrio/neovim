@@ -8,4 +8,5 @@ return {
       })
     end,
   },
+  { 'echasnovski/mini.starter', version = false ,opts = {}},
 }
