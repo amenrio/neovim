@@ -1,6 +1,10 @@
 return {
   { "windwp/nvim-autopairs", event = "InsertEnter", config = true },
   {
+    "L3MON4D3/LuaSnip",
+    build = "make install_jsregexp",
+  },
+  {
     "hrsh7th/nvim-cmp",
     dependencies = {
       "neovim/nvim-lspconfig",
@@ -88,4 +92,3 @@ return {
     end,
   },
 }
-
