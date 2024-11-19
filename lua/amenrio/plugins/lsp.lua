@@ -1,4 +1,4 @@
-return{
+return {
   {
     "williamboman/mason.nvim",
     config = function()
@@ -37,6 +37,23 @@ return{
       })
       lspconfig.pylsp.setup({
         capabilities = capabilities,
+        settings = {
+          pylsp = {
+            plugins = {
+              black = { enable = true },
+              autopep8 = { enable = false },
+              yapf = { enabled = false },
+              -- linter options
+              pylint = { enabled = true, executable = "pylint" },
+              pyflakes = { enabled = false },
+              pycodestyle = { enabled = false },
+
+              pylsp_mypy = { enabled = true },
+              jedi_completion = { fuzzy = true },
+              pyls_isort = { enabled = true },
+            }
+          }
+        }
       })
     end,
   },
