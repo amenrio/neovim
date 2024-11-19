@@ -22,4 +22,14 @@ return{
       overrides = {},           -- add custom overrides
     }
   },
+  {
+    'neanias/everforest-nvim',
+    name = 'everforest',
+    version = false,
+    lazy = false,
+    priority = 1000,
+    opts = {
+      background = "hard",
+    }
+  },
   }
