@@ -6,17 +6,11 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 vim.keymap.set("n", "J", "mzJ`z")
 
--- center buffer on commands
--- vim.keymap.set("n", "<C-d>", "<C-d>zz")
--- vim.keymap.set("n", "<C-u>", "<C-u>zz")
--- vim.keymap.set("n", "n", "nzzzv")
--- vim.keymap.set("n", "N", "Nzzzv")
-
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]], { desc = 'Paste without overriding paste buffer [["_dP]]' })
 
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = 'Yank to clipboard [["+y]]' })
-vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = 'Clean delete [["_d]]' })
+-- vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = 'Clean delete [["_d]]' })
 -- next greatest remap ever : asbjornHaland
 vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = 'Yank line to clipboard [["+Y]]' })
 
@@ -28,8 +22,6 @@ vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tm<CR>")
 --    vim.lsp.buf.format()
 --end)
 
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
 --
@@ -55,10 +47,4 @@ vim.keymap.set(
   "<leader>rc",
   [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gIc<Left><Left><Left><Left>]],
   { desc = "Search & [R]eplace current [W]ord with [C]onfirmation" }
-)
-vim.keymap.set(
-  "n",
-  "<leader>x",
-  "<cmd>!chmod +x %<CR>",
-  { silent = true, desc = "Make current file buffer executable" }
 )
