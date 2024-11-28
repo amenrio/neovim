@@ -22,7 +22,7 @@ return { -- Adds git related signs to the gutter, as well as utilities for manag
     },
     keys = {
       {
-        "<leader>gc",
+        "<leader>nc",
         function ()
           local neogit = require("neogit")
           neogit.open({"commit"})
@@ -30,7 +30,7 @@ return { -- Adds git related signs to the gutter, as well as utilities for manag
         desc = "Open [G]it [C]ommit Popup",
       },
       {
-        "<leader>gp",
+        "<leader>np",
         function()
           local neogit = require("neogit")
           neogit.open({"pull"})
@@ -38,7 +38,7 @@ return { -- Adds git related signs to the gutter, as well as utilities for manag
         desc = "Open [G]it [P]ull Popup",
       },
       {
-        "<leader>gb",
+        "<leader>nb",
         function()
           local neogit = require("neogit")
           neogit.open({"branch"})
@@ -46,7 +46,7 @@ return { -- Adds git related signs to the gutter, as well as utilities for manag
         desc = "Open [G]it [B]ranch Popup",
       },
       {
-        "<leader>gd",
+        "<leader>nd",
         function()
           local neogit = require("neogit")
           neogit.open({"diff"})
@@ -54,7 +54,7 @@ return { -- Adds git related signs to the gutter, as well as utilities for manag
         desc = "Open [G]it [D]iff Popup",
       },
       {
-        "<leader>gg",
+        "<leader>ng",
         function()
           local neogit = require("neogit")
           neogit.open({ kind = "floating" })
